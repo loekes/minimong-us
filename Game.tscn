@@ -1,4 +1,4 @@
-[gd_scene load_steps=111 format=2]
+[gd_scene load_steps=113 format=2]
 
 [ext_resource path="res://Sprites/SciFiWallsTileset.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -14,6 +14,8 @@
 [ext_resource path="res://Scenes/Interactable/ChargingPad.tscn" type="PackedScene" id=12]
 [ext_resource path="res://Scenes/Interactable/Workbench.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scenes/Interactable/SatComputer.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/UI.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Scenes/Helpers/Room Zone.tscn" type="PackedScene" id=16]
 
 [sub_resource type="TileSet" id=1]
 0/name = "FloorTile.png 0"
@@ -724,7 +726,7 @@ points = PoolVector2Array( 0, 0, 16, 0, 16, 16, 0, 16 )
 position = Vector2( 464, 0 )
 
 [node name="Background" type="Sprite" parent="World"]
-position = Vector2( 56, 72 )
+position = Vector2( 64, 80 )
 texture = ExtResource( 6 )
 
 [node name="Structure" type="Node2D" parent="World"]
@@ -750,6 +752,11 @@ format = 1
 tile_data = PoolIntArray( -1310730, 0, 4, -1310729, 0, 196609, -1310728, 0, 196609, -1310727, 0, 196609, -1310726, 0, 196609, -1310725, 0, 196609, -1310724, 0, 196609, -1310723, 0, 196609, -1310722, 0, 196609, -1310721, 0, 196609, -1376256, 0, 8, -1376255, 0, 196609, -1376254, 0, 196609, -1376253, 0, 196609, -1376252, 0, 196609, -1376251, 0, 196609, -1376250, 0, 196609, -1376249, 0, 196609, -1376248, 0, 196609, -1376247, 0, 196609, -1376246, 0, 196609, -1376245, 0, 196609, -1376244, 0, 196609, -1376243, 0, 196609, -1376242, 0, 196609, -1376241, 0, 8, -1376240, 0, 196609, -1376239, 0, 196609, -1376238, 0, 196609, -1376237, 0, 196609, -1376236, 0, 196609, -1376235, 0, 196609, -1376234, 0, 196609, -1376233, 0, 7, -1245195, 0, 4, -1245194, 0, 196615, -1310720, 0, 65539, -1310705, 0, 65539, -1310697, 0, 196612, -1310696, 0, 7, -1179659, 0, 65539, -1245184, 0, 65539, -1245169, 0, 65539, -1245160, 0, 65539, -1114123, 0, 65539, -1179648, 0, 65539, -1179633, 0, 65539, -1179624, 0, 65539, -1048587, 0, 65539, -1114112, 0, 65539, -1114097, 0, 131075, -1114088, 0, 65539, -983051, 0, 65539, -1048576, 0, 65539, -1048552, 0, 65539, -917515, 0, 65539, -983040, 0, 65539, -983025, 0, 3, -983016, 0, 65539, -851979, 0, 131076, -851978, 0, 5, -851977, 0, 196609, -851976, 0, 196610, -851974, 0, 196608, -851973, 0, 196609, -851972, 0, 196609, -851971, 0, 196609, -851970, 0, 196609, -851969, 0, 196609, -917504, 0, 196616, -917503, 0, 196609, -917502, 0, 196609, -917501, 0, 196609, -917500, 0, 196609, -917499, 0, 196609, -917498, 0, 196610, -917496, 0, 196608, -917495, 0, 196609, -917494, 0, 196609, -917493, 0, 196609, -917492, 0, 196609, -917491, 0, 196609, -917490, 0, 6, -917489, 0, 131079, -917480, 0, 65539, -786444, 0, 0, -786443, 0, 65545, -786442, 0, 131074, -851954, 0, 131072, -851953, 0, 9, -851952, 0, 5, -851951, 0, 196610, -851949, 0, 196608, -851948, 0, 196609, -851947, 0, 196609, -851946, 0, 196609, -851945, 0, 196609, -851944, 0, 262151, -720908, 0, 65540, -720907, 0, 131074, -786417, 0, 131072, -786416, 0, 65543, -786408, 0, 65539, -655372, 0, 65539, -720880, 0, 65539, -720872, 0, 65539, -589836, 0, 262148, -589835, 0, 196609, -589834, 0, 196609, -589833, 0, 196609, -589832, 0, 196609, -589831, 0, 196609, -589830, 0, 196609, -589829, 0, 196609, -589828, 0, 196609, -589827, 0, 196609, -589826, 0, 7, -655358, 0, 4, -655357, 0, 196609, -655356, 0, 196609, -655355, 0, 196609, -655354, 0, 196609, -655353, 0, 196609, -655352, 0, 196609, -655351, 0, 196609, -655350, 0, 196609, -655349, 0, 196609, -655348, 0, 7, -655344, 0, 65539, -655336, 0, 65539, -524300, 0, 65539, -524290, 0, 65539, -589822, 0, 65539, -589812, 0, 65539, -589808, 0, 131075, -589800, 0, 65539, -458764, 0, 65539, -458754, 0, 65539, -524286, 0, 65539, -524276, 0, 65539, -524264, 0, 65539, -393228, 0, 65539, -393218, 0, 131075, -458750, 0, 131075, -458740, 0, 65539, -458736, 0, 3, -458728, 0, 65539, -327711, 0, 4, -327710, 0, 196609, -327709, 0, 196609, -327708, 0, 196609, -327707, 0, 196609, -327706, 0, 196609, -327705, 0, 196609, -327704, 0, 196609, -327703, 0, 196609, -327702, 0, 196609, -327701, 0, 196609, -327700, 0, 196609, -327699, 0, 7, -327692, 0, 65539, -393204, 0, 65539, -393200, 0, 65539, -393192, 0, 65539, -262176, 0, 4, -262175, 0, 196615, -262163, 0, 196612, -262162, 0, 7, -262156, 0, 65539, -262146, 0, 3, -327678, 0, 3, -327668, 0, 65539, -327664, 0, 65539, -327656, 0, 65539, -196640, 0, 65539, -196626, 0, 65539, -196620, 0, 65539, -196610, 0, 65539, -262142, 0, 65539, -262132, 0, 65539, -262128, 0, 65539, -262120, 0, 65539, -131104, 0, 65539, -131090, 0, 65539, -131084, 0, 65539, -131076, 0, 0, -131075, 0, 5, -131074, 0, 196616, -131073, 0, 196610, -196607, 0, 196608, -196606, 0, 196616, -196605, 0, 6, -196604, 0, 2, -196596, 0, 65539, -196592, 0, 65539, -196584, 0, 65539, -65568, 0, 65539, -65554, 0, 65539, -65548, 0, 65539, -65541, 0, 0, -65540, 0, 65545, -65539, 0, 131074, -131069, 0, 131072, -131068, 0, 9, -131067, 0, 2, -131060, 0, 65539, -131056, 0, 65539, -131048, 0, 65539, -32, 0, 65539, -18, 0, 65539, -12, 0, 65539, -5, 0, 65540, -4, 0, 131074, -65532, 0, 131072, -65531, 0, 65543, -65524, 0, 65539, -65520, 0, 65539, -65512, 0, 65539, 65504, 0, 65539, 65510, 0, 4, 65511, 0, 196609, 65512, 0, 196609, 65513, 0, 196610, 65515, 0, 196608, 65516, 0, 196609, 65517, 0, 196609, 65518, 0, 262152, 65519, 0, 196609, 65520, 0, 196609, 65521, 0, 196609, 65522, 0, 196609, 65523, 0, 196609, 65524, 0, 262152, 65525, 0, 196609, 65526, 0, 196609, 65527, 0, 196610, 65529, 0, 196608, 65530, 0, 196609, 65531, 0, 262151, 5, 0, 262148, 6, 0, 196609, 7, 0, 196610, 9, 0, 196608, 10, 0, 196609, 11, 0, 196609, 12, 0, 196615, 16, 0, 65539, 24, 0, 65539, 131040, 0, 65539, 131046, 0, 65539, 131054, 0, 131075, 131060, 0, 131075, 131067, 0, 131075, 65541, 0, 131075, 65552, 0, 65539, 65560, 0, 65539, 196576, 0, 262148, 196577, 0, 196609, 196578, 0, 196609, 196579, 0, 196609, 196580, 0, 196609, 196581, 0, 196609, 196582, 0, 262151, 131088, 0, 262148, 131089, 0, 196609, 131090, 0, 196609, 131091, 0, 196609, 131092, 0, 196609, 131093, 0, 196609, 131094, 0, 196609, 131095, 0, 196609, 131096, 0, 262151, 262112, 0, 65539, 262118, 0, 65539, 262126, 0, 3, 262132, 0, 3, 262139, 0, 3, 196613, 0, 3, 196624, 0, 65539, 196632, 0, 65539, 327648, 0, 65539, 327654, 0, 196612, 327655, 0, 196609, 327656, 0, 196609, 327657, 0, 196610, 327659, 0, 196608, 327660, 0, 196609, 327661, 0, 196609, 327662, 0, 262152, 327663, 0, 196609, 327664, 0, 196609, 327665, 0, 196609, 327666, 0, 196609, 327667, 0, 196609, 327668, 0, 262152, 327669, 0, 196609, 327670, 0, 196609, 327671, 0, 196610, 327673, 0, 196608, 327674, 0, 196609, 327675, 0, 262151, 262149, 0, 262148, 262150, 0, 196609, 262151, 0, 196610, 262153, 0, 196608, 262154, 0, 196609, 262155, 0, 196609, 262156, 0, 7, 262160, 0, 65539, 262168, 0, 65539, 393184, 0, 65539, 393198, 0, 65539, 393204, 0, 65539, 393211, 0, 131076, 393212, 0, 2, 327684, 0, 0, 327685, 0, 131079, 327692, 0, 65539, 327696, 0, 65539, 327704, 0, 65539, 458720, 0, 65539, 458734, 0, 65539, 458740, 0, 65539, 458747, 0, 131072, 458748, 0, 9, 458749, 0, 2, 393219, 0, 0, 393220, 0, 65545, 393221, 0, 131074, 393228, 0, 65539, 393232, 0, 65539, 393240, 0, 65539, 524256, 0, 65539, 524270, 0, 65539, 524276, 0, 65539, 524284, 0, 131072, 524285, 0, 196613, 524286, 0, 8, 524287, 0, 196610, 458753, 0, 196608, 458754, 0, 8, 458755, 0, 196614, 458756, 0, 131074, 458764, 0, 65539, 458768, 0, 131075, 458776, 0, 65539, 589792, 0, 65539, 589806, 0, 65539, 589812, 0, 65539, 589822, 0, 65539, 524290, 0, 65539, 524300, 0, 65539, 524312, 0, 65539, 655328, 0, 196612, 655329, 0, 7, 655341, 0, 4, 655342, 0, 196615, 655348, 0, 65539, 655358, 0, 131075, 589826, 0, 131075, 589836, 0, 65539, 589840, 0, 3, 589848, 0, 65539, 720865, 0, 196612, 720866, 0, 196609, 720867, 0, 196609, 720868, 0, 196609, 720869, 0, 196609, 720870, 0, 196609, 720871, 0, 196609, 720872, 0, 196609, 720873, 0, 196609, 720874, 0, 196609, 720875, 0, 196609, 720876, 0, 196609, 720877, 0, 196615, 720884, 0, 65539, 655372, 0, 65539, 655376, 0, 65539, 655384, 0, 65539, 786420, 0, 65539, 786430, 0, 3, 720898, 0, 3, 720908, 0, 65539, 720912, 0, 65539, 720920, 0, 65539, 851956, 0, 65539, 851966, 0, 65539, 786434, 0, 65539, 786444, 0, 65539, 786447, 0, 0, 786448, 0, 131079, 786455, 0, 4, 786456, 0, 196615, 917492, 0, 65539, 917502, 0, 65539, 851970, 0, 65539, 851980, 0, 65539, 851982, 0, 0, 851983, 0, 65545, 851984, 0, 196613, 851985, 0, 196609, 851986, 0, 196609, 851987, 0, 196609, 851988, 0, 196609, 851989, 0, 196609, 851990, 0, 196609, 851991, 0, 196615, 983028, 0, 196612, 983029, 0, 8, 983030, 0, 196609, 983031, 0, 196609, 983032, 0, 196609, 983033, 0, 196609, 983034, 0, 196609, 983035, 0, 196609, 983036, 0, 196609, 983037, 0, 196609, 983038, 0, 196616, 983039, 0, 196610, 917505, 0, 196608, 917506, 0, 196616, 917507, 0, 196609, 917508, 0, 196609, 917509, 0, 196609, 917510, 0, 196609, 917511, 0, 196609, 917512, 0, 196609, 917513, 0, 196609, 917514, 0, 196609, 917515, 0, 8, 917516, 0, 196616, 917517, 0, 196609, 917518, 0, 196614, 917519, 0, 131074, 1048565, 0, 65539, 983051, 0, 65539, 1114101, 0, 65539, 1048587, 0, 65539, 1179637, 0, 65539, 1114123, 0, 65539, 1245173, 0, 196612, 1245174, 0, 7, 1179658, 0, 4, 1179659, 0, 196615, 1310710, 0, 65539, 1245194, 0, 65539, 1376246, 0, 65539, 1310730, 0, 65539, 1441782, 0, 196612, 1441783, 0, 7, 1376265, 0, 4, 1376266, 0, 196615, 1507319, 0, 196612, 1507320, 0, 196609, 1507321, 0, 7, 1441799, 0, 4, 1441800, 0, 196609, 1441801, 0, 196615, 1572857, 0, 196612, 1572858, 0, 196609, 1572859, 0, 196609, 1572860, 0, 7, 1507332, 0, 4, 1507333, 0, 196609, 1507334, 0, 196609, 1507335, 0, 196615, 1638396, 0, 196612, 1638397, 0, 196609, 1638398, 0, 196609, 1638399, 0, 196609, 1572864, 0, 196609, 1572865, 0, 196609, 1572866, 0, 196609, 1572867, 0, 196609, 1572868, 0, 196615 )
 
 [node name="Rooms" type="Node2D" parent="World"]
+
+[node name="The Hub" type="Node2D" parent="World/Rooms"]
+
+[node name="Room Zone" parent="World/Rooms/The Hub" instance=ExtResource( 16 )]
+room_name = "The Hub"
 
 [node name="Server Room" type="Node2D" parent="World/Rooms"]
 
@@ -810,6 +817,13 @@ position = Vector2( -80, -16 )
 [node name="Server11" parent="World/Rooms/Server Room/Interactable" instance=ExtResource( 8 )]
 position = Vector2( -48, -16 )
 
+[node name="Room Zone" parent="World/Rooms/Server Room" instance=ExtResource( 16 )]
+position = Vector2( -128, -112 )
+room_name = "Server Room"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Server Room/Room Zone" index="0"]
+polygon = PoolVector2Array( 0, 0, 0, 144, 96, 144, 96, 112, 112, 112, 112, 96, 144, 96, 144, 64, 144, 0 )
+
 [node name="Green House" type="Node2D" parent="World/Rooms"]
 
 [node name="Interactable" type="Node2D" parent="World/Rooms/Green House"]
@@ -869,6 +883,13 @@ position = Vector2( -48, 112 )
 position = Vector2( 16, 224 )
 rotation = 1.5708
 
+[node name="Room Zone" parent="World/Rooms/Green House" instance=ExtResource( 16 )]
+position = Vector2( -128, 112 )
+room_name = "Greenhouse"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Green House/Room Zone" index="0"]
+polygon = PoolVector2Array( 0, 0, 0, 144, 144, 144, 144, 48, 112, 48, 112, 32, 96, 32, 96, 0 )
+
 [node name="Droid Workshop" type="Node2D" parent="World/Rooms"]
 
 [node name="Interactable" type="Node2D" parent="World/Rooms/Droid Workshop"]
@@ -905,6 +926,13 @@ position = Vector2( 176, 176 )
 [node name="Workbench3" parent="World/Rooms/Droid Workshop/Interactable" instance=ExtResource( 13 )]
 position = Vector2( 128, 224 )
 
+[node name="Room Zone" parent="World/Rooms/Droid Workshop" instance=ExtResource( 16 )]
+position = Vector2( 112, 112 )
+room_name = "Droid Workshop"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Droid Workshop/Room Zone" index="0"]
+polygon = PoolVector2Array( -16, 144, 128, 144, 128, 0, 32, 0, 32, 32, 16, 32, 16, 48, -16, 48 )
+
 [node name="Sat Communications" type="Node2D" parent="World/Rooms"]
 
 [node name="Interactable" type="Node2D" parent="World/Rooms/Sat Communications"]
@@ -930,6 +958,13 @@ rotation = 1.5708
 position = Vector2( 240, -80 )
 rotation = 1.5708
 
+[node name="Room Zone" parent="World/Rooms/Sat Communications" instance=ExtResource( 16 )]
+position = Vector2( 96, -112 )
+room_name = "Sat Communications"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Sat Communications/Room Zone" index="0"]
+polygon = PoolVector2Array( 144, 144, 144, 0, 0, 0, 0, 96, 32, 96, 32, 112, 48, 112, 48, 144 )
+
 [node name="Decon" type="Node2D" parent="World/Rooms"]
 
 [node name="Interactable" type="Node2D" parent="World/Rooms/Decon"]
@@ -940,6 +975,13 @@ position = Vector2( -144, 64 )
 [node name="Door 2 to Decon" parent="World/Rooms/Decon/Interactable" instance=ExtResource( 5 )]
 position = Vector2( -240, 64 )
 
+[node name="Room Zone" parent="World/Rooms/Decon" instance=ExtResource( 16 )]
+position = Vector2( -224, 48 )
+room_name = "Decontamination"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Decon/Room Zone" index="0"]
+polygon = PoolVector2Array( 0, 0, 0, 48, 80, 48, 80, 0 )
+
 [node name="Research Lab" type="Node2D" parent="World/Rooms"]
 
 [node name="Interactable" type="Node2D" parent="World/Rooms/Research Lab"]
@@ -947,6 +989,13 @@ position = Vector2( -240, 64 )
 [node name="Door to Research Lab" parent="World/Rooms/Research Lab/Interactable" instance=ExtResource( 5 )]
 position = Vector2( -304, 48 )
 rotation = -1.5708
+
+[node name="Room Zone" parent="World/Rooms/Research Lab" instance=ExtResource( 16 )]
+position = Vector2( -432, -32 )
+room_name = "Research Lab"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Research Lab/Room Zone" index="0"]
+polygon = PoolVector2Array( -16, 0, 0, 0, 0, -16, 176, -16, 176, 0, 192, 0, 192, 64, 64, 64, 64, 96, -16, 96 )
 
 [node name="Water Treatment" type="Node2D" parent="World/Rooms"]
 
@@ -956,6 +1005,13 @@ rotation = -1.5708
 position = Vector2( -304, 112 )
 rotation = -1.5708
 
+[node name="Room Zone" parent="World/Rooms/Water Treatment" instance=ExtResource( 16 )]
+position = Vector2( -448, 80 )
+room_name = "Water Treatment"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Water Treatment/Room Zone" index="0"]
+polygon = PoolVector2Array( 0, 0, 80, 0, 80, 32, 208, 32, 208, 96, 192, 96, 192, 112, 16, 112, 16, 96, 0, 96 )
+
 [node name="Bunks" type="Node2D" parent="World/Rooms"]
 
 [node name="Interactable" type="Node2D" parent="World/Rooms/Bunks"]
@@ -964,6 +1020,13 @@ rotation = -1.5708
 position = Vector2( -64, -176 )
 rotation = -1.5708
 
+[node name="Room Zone" parent="World/Rooms/Bunks" instance=ExtResource( 16 )]
+position = Vector2( -96, -272 )
+room_name = "Bunks"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Bunks/Room Zone" index="0"]
+polygon = PoolVector2Array( -16, 80, 144, 80, 144, -16, 0, -16, 0, 0, -16, 0 )
+
 [node name="Cafeteria" type="Node2D" parent="World/Rooms"]
 
 [node name="Interactable" type="Node2D" parent="World/Rooms/Cafeteria"]
@@ -971,6 +1034,13 @@ rotation = -1.5708
 [node name="Door to Cafeteria" parent="World/Rooms/Cafeteria/Interactable" instance=ExtResource( 5 )]
 position = Vector2( 160, -176 )
 rotation = -1.5708
+
+[node name="Room Zone" parent="World/Rooms/Cafeteria" instance=ExtResource( 16 )]
+position = Vector2( 64, -288 )
+room_name = "Cafeteria"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Cafeteria/Room Zone" index="0"]
+polygon = PoolVector2Array( 0, 0, 0, 96, 224, 96, 224, 0 )
 
 [node name="Kitchen" type="Node2D" parent="World/Rooms"]
 
@@ -983,6 +1053,13 @@ rotation = -1.5708
 [node name="Door 2 to Kitchen" parent="World/Rooms/Kitchen/Interactable" instance=ExtResource( 5 )]
 position = Vector2( 288, -224 )
 
+[node name="Room Zone" parent="World/Rooms/Kitchen" instance=ExtResource( 16 )]
+position = Vector2( 304, -288 )
+room_name = "Kitchen"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Kitchen/Room Zone" index="0"]
+polygon = PoolVector2Array( 0, 0, 0, 112, 128, 112, 128, 16, 112, 16, 112, 0 )
+
 [node name="Storage" type="Node2D" parent="World/Rooms"]
 
 [node name="Interactable" type="Node2D" parent="World/Rooms/Storage"]
@@ -990,12 +1067,27 @@ position = Vector2( 288, -224 )
 [node name="Door to Storage" parent="World/Rooms/Storage/Interactable" instance=ExtResource( 5 )]
 position = Vector2( 304, -96 )
 
+[node name="Room Zone" parent="World/Rooms/Storage" instance=ExtResource( 16 )]
+position = Vector2( 320, -160 )
+room_name = "Storage"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Storage/Room Zone" index="0"]
+position = Vector2( 0, 1 )
+polygon = PoolVector2Array( 0, 0, 0, 223, 112, 223, 112, -1 )
+
 [node name="Medbay" type="Node2D" parent="World/Rooms"]
 
 [node name="Interactable" type="Node2D" parent="World/Rooms/Medbay"]
 
 [node name="Door to Medbay" parent="World/Rooms/Medbay/Interactable" instance=ExtResource( 5 )]
 position = Vector2( 304, 160 )
+
+[node name="Room Zone" parent="World/Rooms/Medbay" instance=ExtResource( 16 )]
+position = Vector2( 320, 80 )
+room_name = "Medbay"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Medbay/Room Zone" index="0"]
+polygon = PoolVector2Array( 0, 0, 0, 160, 96, 160, 96, 144, 112, 144, 112, 0 )
 
 [node name="Power Station" type="Node2D" parent="World/Rooms"]
 
@@ -1005,5 +1097,161 @@ position = Vector2( 304, 160 )
 position = Vector2( 48, 272 )
 rotation = -1.5708
 
+[node name="Room Zone" parent="World/Rooms/Power Station" instance=ExtResource( 16 )]
+position = Vector2( -112, 272 )
+room_name = "Power Station"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Power Station/Room Zone" index="0"]
+polygon = PoolVector2Array( 0, 0, 0, 48, 16, 48, 16, 96, 32, 96, 32, 112, 64, 112, 64, 128, 112, 128, 112, 144, 224, 144, 224, 128, 272, 128, 272, 112, 304, 112, 304, 96, 320, 96, 320, 48, 336, 48, 336, 0 )
+
+[node name="Hallways" type="Node2D" parent="World/Rooms"]
+
+[node name="North Spoke" type="Node2D" parent="World/Rooms/Hallways"]
+
+[node name="Room Zone" parent="World/Rooms/Hallways/North Spoke" instance=ExtResource( 16 )]
+position = Vector2( 32, -128 )
+room_name = "North Spoke"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Hallways/North Spoke/Room Zone" index="0"]
+polygon = PoolVector2Array( 0, 16, 48, 16, 48, 112, 0, 112 )
+
+[node name="East Spoke" type="Node2D" parent="World/Rooms/Hallways"]
+
+[node name="Room Zone" parent="World/Rooms/Hallways/East Spoke" instance=ExtResource( 16 )]
+position = Vector2( 144, 48 )
+room_name = "East Spoke"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Hallways/East Spoke/Room Zone" index="0"]
+polygon = PoolVector2Array( 0, 0, 0, 48, 96, 48, 96, 0 )
+
+[node name="South Spoke" type="Node2D" parent="World/Rooms/Hallways"]
+
+[node name="Room Zone" parent="World/Rooms/Hallways/South Spoke" instance=ExtResource( 16 )]
+position = Vector2( 32, 160 )
+room_name = "South Spoke"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Hallways/South Spoke/Room Zone" index="0"]
+polygon = PoolVector2Array( 0, 0, 0, 96, 48, 96, 48, 0 )
+
+[node name="West Spoke" type="Node2D" parent="World/Rooms/Hallways"]
+
+[node name="Room Zone" parent="World/Rooms/Hallways/West Spoke" instance=ExtResource( 16 )]
+position = Vector2( -128, 48 )
+room_name = "West Spoke"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Hallways/West Spoke/Room Zone" index="0"]
+polygon = PoolVector2Array( 0, 0, 0, 48, 96, 48, 96, 0 )
+
+[node name="North Hallway" type="Node2D" parent="World/Rooms/Hallways"]
+
+[node name="Room Zone" parent="World/Rooms/Hallways/North Hallway" instance=ExtResource( 16 )]
+position = Vector2( -128, -176 )
+room_name = "North Hallway"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Hallways/North Hallway/Room Zone" index="0"]
+polygon = PoolVector2Array( 0, 48, 384, 48, 416, 32, 416, 16, 400, 16, 400, 0, 32, 0, 32, 16, 16, 16, 16, 32, 0, 32 )
+
+[node name="East Hallway" type="Node2D" parent="World/Rooms/Hallways"]
+
+[node name="Room Zone" parent="World/Rooms/Hallways/East Hallway" instance=ExtResource( 16 )]
+position = Vector2( 256, 256 )
+room_name = "East Hallway"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Hallways/East Hallway/Room Zone" index="0"]
+polygon = PoolVector2Array( 0, 0, 16, 0, 16, -16, 32, -16, 32, -32, 48, -32, 48, -384, 32, -384, 0, -368 )
+
+[node name="West Hallway" type="Node2D" parent="World/Rooms/Hallways"]
+
+[node name="Room Zone" parent="World/Rooms/Hallways/West Hallway" instance=ExtResource( 16 )]
+position = Vector2( -352, 48 )
+room_name = "West Hallway"
+
+[node name="CollisionPolygon2D" parent="World/Rooms/Hallways/West Hallway/Room Zone" index="0"]
+polygon = PoolVector2Array( 0, 0, 0, 48, 112, 48, 112, 0 )
+
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 520, 72 )
+
+[node name="UI" parent="." instance=ExtResource( 15 )]
+[connection signal="room_entered" from="World/Rooms/The Hub/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/The Hub/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Server Room/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Server Room/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Green House/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Green House/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Droid Workshop/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Droid Workshop/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Sat Communications/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Sat Communications/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Decon/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Decon/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Research Lab/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Research Lab/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Water Treatment/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Water Treatment/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Bunks/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Bunks/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Cafeteria/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Cafeteria/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Kitchen/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Kitchen/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Storage/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Storage/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Medbay/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Medbay/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Power Station/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Power Station/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Hallways/North Spoke/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Hallways/North Spoke/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Hallways/East Spoke/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Hallways/East Spoke/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Hallways/South Spoke/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Hallways/South Spoke/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Hallways/West Spoke/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Hallways/West Spoke/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Hallways/North Hallway/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Hallways/North Hallway/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Hallways/East Hallway/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Hallways/East Hallway/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+[connection signal="room_entered" from="World/Rooms/Hallways/West Hallway/Room Zone" to="UI" method="_on_Room_Zone_room_entered"]
+[connection signal="room_exited" from="World/Rooms/Hallways/West Hallway/Room Zone" to="UI" method="_on_Room_Zone_room_exited"]
+
+[editable path="World/Rooms/Server Room/Room Zone"]
+
+[editable path="World/Rooms/Green House/Room Zone"]
+
+[editable path="World/Rooms/Droid Workshop/Room Zone"]
+
+[editable path="World/Rooms/Sat Communications/Room Zone"]
+
+[editable path="World/Rooms/Decon/Room Zone"]
+
+[editable path="World/Rooms/Research Lab/Room Zone"]
+
+[editable path="World/Rooms/Water Treatment/Room Zone"]
+
+[editable path="World/Rooms/Bunks/Room Zone"]
+
+[editable path="World/Rooms/Cafeteria/Room Zone"]
+
+[editable path="World/Rooms/Kitchen/Room Zone"]
+
+[editable path="World/Rooms/Storage/Room Zone"]
+
+[editable path="World/Rooms/Medbay/Room Zone"]
+
+[editable path="World/Rooms/Power Station/Room Zone"]
+
+[editable path="World/Rooms/Hallways/North Spoke/Room Zone"]
+
+[editable path="World/Rooms/Hallways/East Spoke/Room Zone"]
+
+[editable path="World/Rooms/Hallways/South Spoke/Room Zone"]
+
+[editable path="World/Rooms/Hallways/West Spoke/Room Zone"]
+
+[editable path="World/Rooms/Hallways/North Hallway/Room Zone"]
+
+[editable path="World/Rooms/Hallways/East Hallway/Room Zone"]
+
+[editable path="World/Rooms/Hallways/West Hallway/Room Zone"]
