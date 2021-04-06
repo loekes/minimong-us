@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sprites/SoilTray.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 7.9706, 24 )
+
+[sub_resource type="OccluderPolygon2D" id=2]
+polygon = PoolVector2Array( 1.99202, -0.0103632, 0.0305338, 1.99537, 0.0204506, 45.8726, 2.05338, 47.994, 13.9416, 48.0382, 15.9745, 45.9168, 16.0408, 1.97409, 13.9134, -0.0281711 )
+
+[node name="SoilTray" type="StaticBody2D"]
+collision_mask = 0
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 8, 24 )
+shape = SubResource( 1 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+occluder = SubResource( 2 )
