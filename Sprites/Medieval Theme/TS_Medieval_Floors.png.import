@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SciFiWallsTileset.png-9e124a8950863089a5e2ad05c5633cd2.stex"
+path="res://.import/TS_Medieval_Floors.png-0295ecf803e0f32613bde74a1c22baac.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Sci-FI Theme/SciFiWallsTileset.png"
-dest_files=[ "res://.import/SciFiWallsTileset.png-9e124a8950863089a5e2ad05c5633cd2.stex" ]
+source_file="res://Sprites/Medieval Theme/TS_Medieval_Floors.png"
+dest_files=[ "res://.import/TS_Medieval_Floors.png-0295ecf803e0f32613bde74a1c22baac.stex" ]
 
 [params]
 

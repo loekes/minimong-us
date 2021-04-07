@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ServingTable.png-83db6ddd1695e4a69cc24edc9536b599.stex"
+path="res://.import/Door.png-3806789831117b5a92f579f497c9f02c.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Sci-FI Theme/ServingTable.png"
-dest_files=[ "res://.import/ServingTable.png-83db6ddd1695e4a69cc24edc9536b599.stex" ]
+source_file="res://Sprites/Medieval Theme/Door.png"
+dest_files=[ "res://.import/Door.png-3806789831117b5a92f579f497c9f02c.stex" ]
 
 [params]
 
