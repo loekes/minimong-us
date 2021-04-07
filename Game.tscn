@@ -1,4 +1,4 @@
-[gd_scene load_steps=109 format=2]
+[gd_scene load_steps=113 format=2]
 
 [ext_resource path="res://Sprites/Medieval Theme/TS_Medieval_Floors.png" type="Texture" id=1]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
@@ -9,6 +9,10 @@
 [ext_resource path="res://Scenes/Interactable/WoodenBench.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/Interactable/Stool.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/Interactable/Altar.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/Interactable/LargeBarrel.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/Interactable/SmallBarrel.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/Interactable/SmallCrate.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/Interactable/LargeCrate.tscn" type="PackedScene" id=13]
 [ext_resource path="res://Scenes/UI.tscn" type="PackedScene" id=15]
 [ext_resource path="res://Scenes/Helpers/Room Zone.tscn" type="PackedScene" id=16]
 [ext_resource path="res://Sprites/Medieval Theme/TS_Medieval_Walls.png" type="Texture" id=23]
@@ -882,6 +886,53 @@ rotation = -1.5708
 
 [node name="South Door" parent="World/Areas/Courtyard/Interactable" instance=ExtResource( 3 )]
 position = Vector2( 176, 80 )
+
+[node name="Large Barrel" parent="World/Areas/Courtyard/Interactable" instance=ExtResource( 10 )]
+position = Vector2( -4, -5 )
+
+[node name="Small Barrel" parent="World/Areas/Courtyard/Interactable" instance=ExtResource( 11 )]
+position = Vector2( 30, 2 )
+rotation = 0.785398
+
+[node name="Small Barrel2" parent="World/Areas/Courtyard/Interactable" instance=ExtResource( 11 )]
+position = Vector2( 29, 19 )
+rotation = 1.62316
+
+[node name="Small Barrel3" parent="World/Areas/Courtyard/Interactable" instance=ExtResource( 11 )]
+position = Vector2( 48, 0 )
+
+[node name="Small Barrel4" parent="World/Areas/Courtyard/Interactable" instance=ExtResource( 11 )]
+position = Vector2( 143, 26 )
+
+[node name="Small Barrel5" parent="World/Areas/Courtyard/Interactable" instance=ExtResource( 11 )]
+position = Vector2( 53, 120 )
+rotation = 2.21657
+
+[node name="Small Crate" parent="World/Areas/Courtyard/Interactable" instance=ExtResource( 12 )]
+position = Vector2( 112, 16 )
+
+[node name="Small Crate2" parent="World/Areas/Courtyard/Interactable" instance=ExtResource( 12 )]
+position = Vector2( 136, 9 )
+rotation = 0.436332
+
+[node name="Small Crate3" parent="World/Areas/Courtyard/Interactable" instance=ExtResource( 12 )]
+position = Vector2( 123, 37 )
+rotation = -0.575959
+
+[node name="Small Crate4" parent="World/Areas/Courtyard/Interactable" instance=ExtResource( 12 )]
+position = Vector2( 35, 155 )
+rotation = -0.471239
+
+[node name="Small Crate5" parent="World/Areas/Courtyard/Interactable" instance=ExtResource( 12 )]
+position = Vector2( 17, 119 )
+rotation = 0.0872665
+
+[node name="Large Crate" parent="World/Areas/Courtyard/Interactable" instance=ExtResource( 13 )]
+position = Vector2( 7, 134 )
+
+[node name="Large Crate2" parent="World/Areas/Courtyard/Interactable" instance=ExtResource( 13 )]
+position = Vector2( 59, 122 )
+rotation = 1.51844
 
 [node name="Throne Room" type="Node2D" parent="World/Areas"]
 position = Vector2( 432, -432 )

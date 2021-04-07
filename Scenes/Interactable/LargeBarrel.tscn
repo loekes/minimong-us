@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sprites/Medieval Theme/Large_Barrel.png" type="Texture" id=1]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 10.0688
+
+[sub_resource type="OccluderPolygon2D" id=2]
+polygon = PoolVector2Array( -18.1124, 4.99442, -16.9326, 3.01818, -12.9801, -0.934292, -10.9449, -2.02565, -5.04564, -1.96665, -3.0989, -1.02278, 1.03055, 3.07717, 2.00392, 4.99442, 2.03341, 10.9231, 1.03055, 12.9879, -2.95142, 16.9993, -4.95716, 18.0022, -10.9744, 18.0612, -12.9801, 17.0288, -16.9621, 12.9879, -17.9354, 11.0411 )
+
+[node name="Large Barrel" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 16, 16 )
+shape = SubResource( 1 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+position = Vector2( 24, 8 )
+occluder = SubResource( 2 )
