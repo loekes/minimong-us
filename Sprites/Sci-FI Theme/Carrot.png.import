@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/WaterHose.png-9d469bbc8ff9e6d086f4c2b0fd7b6fee.stex"
+path="res://.import/Carrot.png-07463f6a0043d4b64a116a336ca2727a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/WaterHose.png"
-dest_files=[ "res://.import/WaterHose.png-9d469bbc8ff9e6d086f4c2b0fd7b6fee.stex" ]
+source_file="res://Sprites/Sci-FI Theme/Carrot.png"
+dest_files=[ "res://.import/Carrot.png-07463f6a0043d4b64a116a336ca2727a.stex" ]
 
 [params]
 

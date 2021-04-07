@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Server.png-19496e2988a32b904d057b28d1e2af04.stex"
+path="res://.import/SciFiWallsTileset.png-9e124a8950863089a5e2ad05c5633cd2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Server.png"
-dest_files=[ "res://.import/Server.png-19496e2988a32b904d057b28d1e2af04.stex" ]
+source_file="res://Sprites/Sci-FI Theme/SciFiWallsTileset.png"
+dest_files=[ "res://.import/SciFiWallsTileset.png-9e124a8950863089a5e2ad05c5633cd2.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Sink.png-a8e5ee5741c9401e32d4a455b93fe088.stex"
+path="res://.import/ServingTable.png-83db6ddd1695e4a69cc24edc9536b599.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Sink.png"
-dest_files=[ "res://.import/Sink.png-a8e5ee5741c9401e32d4a455b93fe088.stex" ]
+source_file="res://Sprites/Sci-FI Theme/ServingTable.png"
+dest_files=[ "res://.import/ServingTable.png-83db6ddd1695e4a69cc24edc9536b599.stex" ]
 
 [params]
 

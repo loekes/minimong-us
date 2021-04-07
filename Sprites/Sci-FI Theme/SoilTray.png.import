@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/ServingTable.png-256ce7f5f45e34b3859990e93b439514.stex"
+path="res://.import/SoilTray.png-099c4b789762a8c29aa49d32c4ae00fb.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/ServingTable.png"
-dest_files=[ "res://.import/ServingTable.png-256ce7f5f45e34b3859990e93b439514.stex" ]
+source_file="res://Sprites/Sci-FI Theme/SoilTray.png"
+dest_files=[ "res://.import/SoilTray.png-099c4b789762a8c29aa49d32c4ae00fb.stex" ]
 
 [params]
 

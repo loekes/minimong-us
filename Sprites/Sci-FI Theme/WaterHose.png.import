@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SatComputer.png-d0b209dd678d9ba7ba2faf88cb122e30.stex"
+path="res://.import/WaterHose.png-e569c7e5ca2141fda46535bea60f91a8.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/SatComputer.png"
-dest_files=[ "res://.import/SatComputer.png-d0b209dd678d9ba7ba2faf88cb122e30.stex" ]
+source_file="res://Sprites/Sci-FI Theme/WaterHose.png"
+dest_files=[ "res://.import/WaterHose.png-e569c7e5ca2141fda46535bea60f91a8.stex" ]
 
 [params]
 

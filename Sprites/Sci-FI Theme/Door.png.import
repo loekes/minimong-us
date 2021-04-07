@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/SoilTray.png-31cc7ba250f8cc3818bbd310616d5d0f.stex"
+path="res://.import/Door.png-f3d8b67e8d9208ab1e5feb5791d6a21f.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/SoilTray.png"
-dest_files=[ "res://.import/SoilTray.png-31cc7ba250f8cc3818bbd310616d5d0f.stex" ]
+source_file="res://Sprites/Sci-FI Theme/Door.png"
+dest_files=[ "res://.import/Door.png-f3d8b67e8d9208ab1e5feb5791d6a21f.stex" ]
 
 [params]
 

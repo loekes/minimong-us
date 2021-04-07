@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Stove.png-4a262a5ca53da547df16554a6b823893.stex"
+path="res://.import/FloorTile.png-1c0cec41dfb592cc9e65e3d969fdd3e1.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Stove.png"
-dest_files=[ "res://.import/Stove.png-4a262a5ca53da547df16554a6b823893.stex" ]
+source_file="res://Sprites/Sci-FI Theme/FloorTile.png"
+dest_files=[ "res://.import/FloorTile.png-1c0cec41dfb592cc9e65e3d969fdd3e1.stex" ]
 
 [params]
 

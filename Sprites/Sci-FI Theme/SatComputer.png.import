@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/TrashCan.png-5b694342210a48836a1c5e28989c743b.stex"
+path="res://.import/SatComputer.png-f9c2062f2eeb09d7b36cc6359ee3a1f3.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/TrashCan.png"
-dest_files=[ "res://.import/TrashCan.png-5b694342210a48836a1c5e28989c743b.stex" ]
+source_file="res://Sprites/Sci-FI Theme/SatComputer.png"
+dest_files=[ "res://.import/SatComputer.png-f9c2062f2eeb09d7b36cc6359ee3a1f3.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/FloorDecals.png-0f97bf90823e7423dad5617c2708186b.stex"
+path="res://.import/Sink.png-61d84148650aea4226c383c9d7948954.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/FloorDecals.png"
-dest_files=[ "res://.import/FloorDecals.png-0f97bf90823e7423dad5617c2708186b.stex" ]
+source_file="res://Sprites/Sci-FI Theme/Sink.png"
+dest_files=[ "res://.import/Sink.png-61d84148650aea4226c383c9d7948954.stex" ]
 
 [params]
 

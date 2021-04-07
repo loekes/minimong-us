@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/DinnerTable.png-7d79176a23576d93a02ed054a1cd6f16.stex"
+path="res://.import/Fridge.png-6579fb9b5a3826e8b5c93f60ddbc7c5a.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/DinnerTable.png"
-dest_files=[ "res://.import/DinnerTable.png-7d79176a23576d93a02ed054a1cd6f16.stex" ]
+source_file="res://Sprites/Sci-FI Theme/Fridge.png"
+dest_files=[ "res://.import/Fridge.png-6579fb9b5a3826e8b5c93f60ddbc7c5a.stex" ]
 
 [params]
 

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Fridge.png-2e7118a867748afb935b0ca8964dbd09.stex"
+path="res://.import/TrashCan.png-201fdd6314f1daf9b7d3da789c44301e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/Fridge.png"
-dest_files=[ "res://.import/Fridge.png-2e7118a867748afb935b0ca8964dbd09.stex" ]
+source_file="res://Sprites/Sci-FI Theme/TrashCan.png"
+dest_files=[ "res://.import/TrashCan.png-201fdd6314f1daf9b7d3da789c44301e.stex" ]
 
 [params]
 
