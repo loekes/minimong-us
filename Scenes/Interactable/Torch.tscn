@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sprites/Medieval Theme/Torch.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Medieval Theme/LS_Torch.png" type="Texture" id=2]
+
+[sub_resource type="Animation" id=1]
+resource_name = "Flicker"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Light2D:energy")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.75, 0.7, 0.65, 0.6, 0.55, 0.5, 0.55, 0.6, 0.65, 0.7, 0.75 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Light2D:texture_scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 2.0, 1.9, 1.8, 1.7, 1.6, 1.5, 1.6, 1.7, 1.8, 1.9, 2.0 ]
+}
+
+[node name="Torch" type="Node2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+hframes = 2
+frame = 1
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( 8, 7 )
+texture = ExtResource( 2 )
+texture_scale = 2.0
+color = Color( 0.815686, 0.529412, 0.333333, 1 )
+energy = 0.75
+shadow_enabled = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+autoplay = "Flicker"
+playback_speed = 0.75
+anims/Flicker = SubResource( 1 )

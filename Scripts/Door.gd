@@ -32,6 +32,7 @@ func check_for_activation():
 func activate():
 	anim_player.play("DoorOpen")
 	is_open = true
+	can_activate = false
 	key_sprite.visible = false
 	collider.set_disabled(true)
 	timer.start(time_open)

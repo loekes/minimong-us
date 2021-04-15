@@ -18,7 +18,7 @@ shape = SubResource( 1 )
 rotation = 1.5708
 texture = ExtResource( 3 )
 texture_scale = 3.0
-color = Color( 0.737255, 0.615686, 0.533333, 1 )
+color = Color( 0.815686, 0.529412, 0.333333, 1 )
 energy = 0.5
 shadow_enabled = true
 
@@ -32,8 +32,3 @@ __meta__ = {
 [node name="Camera2D" type="Camera2D" parent="."]
 rotation = 1.5708
 current = true
-limit_left = -16
-limit_top = -320
-limit_right = 928
-limit_bottom = 448
-smoothing_enabled = true

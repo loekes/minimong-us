@@ -21,7 +21,12 @@ _global_script_class_icons={
 [application]
 
 config/name="Minimong Us"
+run/main_scene="res://Game.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+GameData="*res://Scripts/GameData.gd"
 
 [display]
 

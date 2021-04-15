@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sprites/Medieval Theme/Stool.png" type="Texture" id=1]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 7.13942
+
+[sub_resource type="OccluderPolygon2D" id=2]
+polygon = PoolVector2Array( -23.0012, -0.944279, -20.9683, -3.94948, -19.996, -4.96595, -16.9466, -6.8663, -15.0463, -6.95469, -11.9085, -4.96595, -11.0688, -3.94948, -9.12428, -1.03267, -9.03589, 0.95607, -10.9804, 3.96127, -11.9969, 4.93355, -14.9137, 7.05487, -16.9025, 7.14326, -19.9077, 5.06613, -20.9683, 3.96127, -23.0012, 1.00027 )
+
+[node name="Stool" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 8, 8 )
+shape = SubResource( 1 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+position = Vector2( 24, 8 )
+occluder = SubResource( 2 )

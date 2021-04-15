@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Sprites/Medieval Theme/Large_Crate.png" type="Texture" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 9.03061, 8.99149 )
+
+[sub_resource type="OccluderPolygon2D" id=2]
+polygon = PoolVector2Array( -17.0396, -0.993395, 1.02505, -0.993395, 0.989981, 17.0011, -17.1097, 17.1063 )
+
+[node name="Large Crate" type="StaticBody2D"]
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 1 )
+centered = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 16, 16 )
+shape = SubResource( 1 )
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+position = Vector2( 24, 8 )
+occluder = SubResource( 2 )
