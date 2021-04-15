@@ -13,14 +13,10 @@ func _ready():
 	world.remove_child(basement)
 
 func _on_Trapdoor_teleport_to_secret_passage():
-	player.can_move = false
 	teleport(ground_floor)
-	player.can_move = true
 
 func _on_Trapdoor_teleport_to_world():
-	player.can_move = false
 	teleport(basement)
-	player.can_move = true
 
 func teleport(from):
 	var node_to_add = removed_node

@@ -32,4 +32,3 @@ __meta__ = {
 [node name="Camera2D" type="Camera2D" parent="."]
 rotation = 1.5708
 current = true
-smoothing_enabled = true

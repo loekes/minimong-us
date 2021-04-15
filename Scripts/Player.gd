@@ -1,12 +1,11 @@
 extends KinematicBody2D
 
+const ROLE = GameData.Role.Servant
 const MAX_SPEED = 100
 const ACCELERATION = 400
 const FRICTION = 1600
 
 var velocity = Vector2.ZERO;
-
-var can_move = true
 
 func _physics_process(delta):
 	move(delta)
@@ -17,7 +16,7 @@ func move(delta):
 	input_vector.y = Input.get_action_strength("ui_down") - Input.get_action_strength("ui_up")
 	input_vector = input_vector.normalized()
 	
-	if can_move and input_vector != Vector2.ZERO:
+	if input_vector != Vector2.ZERO:
 		velocity += input_vector * ACCELERATION * delta
 		velocity = velocity.clamped(MAX_SPEED)
 	else: 
