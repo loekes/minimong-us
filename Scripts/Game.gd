@@ -12,12 +12,12 @@ func _ready():
 	removed_node = basement
 	world.remove_child(basement)
 
-func _on_Trapdoor_teleport_to_secret_passage(world_position):
+func _on_Trapdoor_teleport_to_secret_passage():
 	player.can_move = false
 	teleport(ground_floor)
 	player.can_move = true
 
-func _on_Trapdoor_teleport_to_world(world_position):
+func _on_Trapdoor_teleport_to_world():
 	player.can_move = false
 	teleport(basement)
 	player.can_move = true

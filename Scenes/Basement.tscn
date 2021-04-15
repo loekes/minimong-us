@@ -690,6 +690,18 @@ rotation = -1.5708
 [node name="Trapdoor" parent="Trapdoors" instance=ExtResource( 5 )]
 position = Vector2( 320, 192 )
 
+[node name="Trapdoor2" parent="Trapdoors" instance=ExtResource( 5 )]
+position = Vector2( 192, -224 )
+
+[node name="Trapdoor3" parent="Trapdoors" instance=ExtResource( 5 )]
+position = Vector2( 704, 192 )
+
+[node name="Trapdoor4" parent="Trapdoors" instance=ExtResource( 5 )]
+position = Vector2( 704, -128 )
+
+[node name="Trapdoor5" parent="Trapdoors" instance=ExtResource( 5 )]
+position = Vector2( 576, -464 )
+
 [node name="Room Zone" parent="." instance=ExtResource( 4 )]
 room_name = "Secret Passageway"
 

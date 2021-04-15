@@ -1,7 +1,7 @@
 extends Node2D
 
-signal teleport_to_world(world_position)
-signal teleport_to_secret_passage(world_position)
+signal teleport_to_world
+signal teleport_to_secret_passage
 
 onready var key_sprite = $"Key Sprite"
 
@@ -23,5 +23,5 @@ func _on_Activation_Zone_body_exited(_body):
 	key_sprite.visible = false
 
 func activate():
-	emit_signal("teleport_to_world", position)
-	emit_signal("teleport_to_secret_passage", position)
+	emit_signal("teleport_to_world")
+	emit_signal("teleport_to_secret_passage")
