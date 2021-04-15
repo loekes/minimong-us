@@ -1,6 +1,6 @@
 extends Node
 
 enum Role {
-	Assasin,
+	Assassin,
 	Servant
 }
