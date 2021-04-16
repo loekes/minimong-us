@@ -16,12 +16,11 @@ func check_for_activation():
 	if can_activate and Input.is_action_just_pressed("interact"):
 		activate()
 
-func _on_Activation_Zone_body_entered(body):
-	if body.name == "Player" and allowed_roles.has(body.ROLE):
+func _on_Activation_Zone_entered():
 		can_activate = true
 		key_sprite.visible = true
 
-func _on_Activation_Zone_body_exited(body):
+func _on_Activation_Zone_exited():
 		can_activate = false
 		key_sprite.visible = false
 

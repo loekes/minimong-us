@@ -1,6 +1,6 @@
 extends KinematicBody2D
 
-const ROLE = GameData.Role.Assassin
+const ROLE = GameData.Role.Servant
 const MAX_SPEED = 100
 const ACCELERATION = 400
 const FRICTION = 1600

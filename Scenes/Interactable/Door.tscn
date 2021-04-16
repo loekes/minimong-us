@@ -97,6 +97,7 @@ occluder = SubResource( 4 )
 [node name="Timer" type="Timer" parent="."]
 
 [node name="Activation Zone" parent="." instance=ExtResource( 4 )]
+allowed_roles = [  ]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
-[connection signal="body_entered" from="Activation Zone" to="." method="_on_Activation_Zone_body_entered"]
-[connection signal="body_exited" from="Activation Zone" to="." method="_on_Activation_Zone_body_exited"]
+[connection signal="entered" from="Activation Zone" to="." method="_on_Activation_Zone_entered"]
+[connection signal="exited" from="Activation Zone" to="." method="_on_Activation_Zone_exited"]

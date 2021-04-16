@@ -924,6 +924,9 @@ position = Vector2( 64, 16 )
 [node name="Trapdoor" parent="Areas/Throne Room/Interactable" instance=ExtResource( 12 )]
 position = Vector2( 80, -32 )
 
+[node name="Activation Zone" parent="Areas/Throne Room/Interactable/Trapdoor" index="2"]
+allowed_roles = [ 0 ]
+
 [node name="Inner Corridor" type="Node2D" parent="Areas"]
 position = Vector2( 368, -80 )
 
@@ -1037,6 +1040,9 @@ polygon = PoolVector2Array( 0, 0, 0, 112, 176, 112, 176, 0 )
 [node name="Trapdoor" parent="Areas/Wine Cellar/Interactable" instance=ExtResource( 12 )]
 position = Vector2( 16, 80 )
 
+[node name="Activation Zone" parent="Areas/Wine Cellar/Interactable/Trapdoor" index="2"]
+allowed_roles = [ 0 ]
+
 [node name="East Corridor" type="Node2D" parent="Areas"]
 position = Vector2( 688, 48 )
 
@@ -1069,6 +1075,9 @@ polygon = PoolVector2Array( 0, 0, 0, 112, 176, 112, 176, 0 )
 [node name="Trapdoor" parent="Areas/Dungeons/Interactable" instance=ExtResource( 12 )]
 position = Vector2( 144, 80 )
 
+[node name="Activation Zone" parent="Areas/Dungeons/Interactable/Trapdoor" index="2"]
+allowed_roles = [ 0 ]
+
 [node name="Servant Quarters" type="Node2D" parent="Areas"]
 position = Vector2( 176, -144 )
 
@@ -1089,6 +1098,9 @@ rotation = -1.5708
 
 [node name="Trapdoor" parent="Areas/Servant Quarters/Interactable" instance=ExtResource( 12 )]
 position = Vector2( 16, -80 )
+
+[node name="Activation Zone" parent="Areas/Servant Quarters/Interactable/Trapdoor" index="2"]
+allowed_roles = [ 0 ]
 
 [node name="Armoury" type="Node2D" parent="Areas"]
 position = Vector2( 272, -80 )
@@ -1140,6 +1152,9 @@ position = Vector2( -80, 256 )
 [node name="Trapdoor" parent="Areas/East Wing/Interactable" instance=ExtResource( 12 )]
 position = Vector2( 80, 256 )
 
+[node name="Activation Zone" parent="Areas/East Wing/Interactable/Trapdoor" index="2"]
+allowed_roles = [ 0 ]
+
 [node name="Royal Corridor" type="Node2D" parent="Areas"]
 position = Vector2( 496, -144 )
 
@@ -1153,6 +1168,8 @@ polygon = PoolVector2Array( 0, 48, 48, 48, 48, 0, 0, 0 )
 
 [editable path="Areas/Throne Room/Room Zone"]
 
+[editable path="Areas/Throne Room/Interactable/Trapdoor"]
+
 [editable path="Areas/Inner Corridor/Room Zone"]
 
 [editable path="Areas/The King's Bed Chamber/Room Zone"]
@@ -1165,18 +1182,26 @@ polygon = PoolVector2Array( 0, 48, 48, 48, 48, 0, 0, 0 )
 
 [editable path="Areas/Wine Cellar/Room Zone"]
 
+[editable path="Areas/Wine Cellar/Interactable/Trapdoor"]
+
 [editable path="Areas/East Corridor/Room Zone"]
 
 [editable path="Areas/West Corridor/Room Zone"]
 
 [editable path="Areas/Dungeons/Room Zone"]
 
+[editable path="Areas/Dungeons/Interactable/Trapdoor"]
+
 [editable path="Areas/Servant Quarters/Room Zone"]
+
+[editable path="Areas/Servant Quarters/Interactable/Trapdoor"]
 
 [editable path="Areas/Armoury/Room Zone"]
 
 [editable path="Areas/West Wing/Room Zone"]
 
 [editable path="Areas/East Wing/Room Zone"]
+
+[editable path="Areas/East Wing/Interactable/Trapdoor"]
 
 [editable path="Areas/Royal Corridor/Room Zone"]

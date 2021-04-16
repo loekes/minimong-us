@@ -16,12 +16,12 @@ func _ready():
 func _process(_delta):
 	check_for_activation()
 
-func _on_Activation_Zone_body_entered(_body):
+func _on_Activation_Zone_entered():
 	if(!is_open):
 		key_sprite.visible = true
 	can_activate = true
 
-func _on_Activation_Zone_body_exited(_body):
+func _on_Activation_Zone_exited():
 	can_activate = false
 	key_sprite.visible = false
 
